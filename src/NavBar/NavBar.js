@@ -13,21 +13,21 @@ const NavBar = () => {
 
 	const ScrollAbout = () => {
 		window.scrollTo({
-			top: 770,
+			top: 820,
 			behavior: 'smooth',
 		});
 	};
 
 	const ScrollSkills = () => {
 		window.scrollTo({
-			top: 1400,
+			top: 1460,
 			behavior: 'smooth',
 		});
 	};
 
 	const ScrollMysite = () => {
 		window.scrollTo({
-			top: 2060,
+			top: 2100,
 			behavior: 'smooth',
 		});
 	};
