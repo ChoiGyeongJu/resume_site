@@ -1,0 +1,55 @@
+@font-face {
+    font-family: SFProDisplay;
+    src: url('../styles/fonts/SFPRODISPLAYREGULAR.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: NanumSquareOTF;
+    src: url('../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
+  }
+  
+  
+.Nav {
+    background-color: white;
+    width: 100%;
+    margin-top: -8px;
+    height: 80px;
+    border-bottom: 2px solid black;
+    display: flex;
+    position: fixed;
+    z-index: 99999;
+
+    .Nav-left {
+        padding-top: 32px;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+
+        .Nav-title {
+            font-size: 16px;
+            display: flex;
+            font-weight: 800;
+            font-family: NanumSquareOTF;
+        }
+    }
+
+    .Nav-center {
+        width: 20%;
+    }
+
+    .Nav-right {
+        padding-top: 32px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    
+        .Nav-menu {
+            font-size: 16px;
+            display: flex;
+            font-weight: 800;
+            padding-right: 42px;
+            cursor: pointer;
+            font-family: SFProDisplay;
+        }
+    }
+}

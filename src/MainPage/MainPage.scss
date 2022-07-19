@@ -1,0 +1,37 @@
+@font-face {
+    font-family: SFProDisplay;
+    src: url('../styles/fonts/SFPRODISPLAYREGULAR.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: NanumSquareOTF;
+    src: url('../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
+  }
+
+.intro1 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+    top: 80px;
+    
+    .profile-left {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+    }
+
+    .profile-right {
+        width: 50%;
+        margin-top: 80px;
+
+        .profile-content {
+            font-size: 16px;
+            margin-top: 32px;
+            font-family: NanumSquareOTF;
+            font-weight: 600;
+        }
+    }
+}
+  

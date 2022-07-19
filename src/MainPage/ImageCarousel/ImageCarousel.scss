@@ -1,0 +1,21 @@
+.image-slider {
+	position: relative;
+	width: 680px;
+
+	.slick-slider {
+		.slick-list {
+			margin-left: 140px;
+			.slick-track {
+				width: 960px;
+			}
+
+			.profile-image {
+				width: 400px;
+				height: 415px;
+				cursor: pointer;
+				border-radius: 100%;
+				border: 1px solid black;
+			}
+		}
+	}
+}
