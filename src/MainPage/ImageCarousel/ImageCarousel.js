@@ -48,27 +48,19 @@ const ImageCarousel = () => {
 	};
 
 	function NextArrow(props) {
-		const { className, style, onClick } = props;
+		const { style, onClick } = props;
 		return (
-			<div
-				className={className}
-				style={{ display: '', color: 'white', marginRight: '110px' }}
-				onClick={onClick}
-			>
-				<img src={prevImage} style={{ transform: 'rotate(180deg)' }} />
+			<div onClick={onClick}>
+				<img className="nextButton" src={prevImage} style={{ transform: 'rotate(180deg)' }} />
 			</div>
 		);
 	}
 
 	function PrevArrow(props) {
-		const { className, style, onClick } = props;
+		const { style, onClick } = props;
 		return (
-			<div
-				className={className}
-				style={{ ...style, display: 'block', color: 'white', marginLeft: '95px' }}
-				onClick={onClick}
-			>
-				<img src={prevImage} />
+			<div onClick={onClick}>
+				<img className="prevButton" src={prevImage} />
 			</div>
 		);
 	}

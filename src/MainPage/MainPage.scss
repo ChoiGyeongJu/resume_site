@@ -1,37 +1,45 @@
 @font-face {
-    font-family: SFProDisplay;
-    src: url('../styles/fonts/SFPRODISPLAYREGULAR.ttf') format('truetype');
-  }
+	font-family: SFProDisplay;
+	src: url('../styles/fonts/SFPRODISPLAYREGULAR.ttf') format('truetype');
+}
 
 @font-face {
-    font-family: NanumSquareOTF;
-    src: url('../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
-  }
-
-.intro1 {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    position: relative;
-    top: 80px;
-    
-    .profile-left {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        padding-top: 60px;
-    }
-
-    .profile-right {
-        width: 50%;
-        margin-top: 80px;
-
-        .profile-content {
-            font-size: 16px;
-            margin-top: 32px;
-            font-family: NanumSquareOTF;
-            font-weight: 600;
-        }
-    }
+	font-family: NanumSquareOTF;
+	src: url('../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
 }
-  
+
+.container {
+	width: 100%;
+
+	.intro1 {
+		width: 100%;
+		height: 640px;
+		display: flex;
+		position: relative;
+		top: 70px;
+		padding-top: 120px;
+		// background-image:  url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8pmPxJ82qG4UZIQsv0c9kCHdSprVpvV1gYA&usqp=CAU");
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		margin-bottom: 130px;
+
+		.profile-left {
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			padding-top: 60px;
+		}
+
+		.profile-right {
+			width: 50%;
+			margin-top: 120px;
+
+			.profile-content {
+				font-size: 24px;
+				margin-top: 42px;
+				font-family: NanumSquareOTF;
+				font-weight: 600;
+			}
+		}
+	}
+}

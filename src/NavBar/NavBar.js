@@ -10,6 +10,28 @@ const NavBar = () => {
 			behavior: 'smooth',
 		});
 	};
+
+	const ScrollAbout = () => {
+		window.scrollTo({
+			top: 770,
+			behavior: 'smooth',
+		});
+	};
+
+	const ScrollSkills = () => {
+		window.scrollTo({
+			top: 1400,
+			behavior: 'smooth',
+		});
+	};
+
+	const ScrollMysite = () => {
+		window.scrollTo({
+			top: 2060,
+			behavior: 'smooth',
+		});
+	};
+
 	return (
 		<div className="Nav">
 			<div className="Nav-left">
@@ -20,9 +42,15 @@ const NavBar = () => {
 				<div className="Nav-menu" onClick={ScrollTop}>
 					Home
 				</div>
-				<div className="Nav-menu">About</div>
-				<div className="Nav-menu">Skills</div>
-				<div className="Nav-menu">My Site</div>
+				<div className="Nav-menu" onClick={ScrollAbout}>
+					About
+				</div>
+				<div className="Nav-menu" onClick={ScrollSkills}>
+					Skills
+				</div>
+				<div className="Nav-menu" onClick={ScrollMysite}>
+					My Site
+				</div>
 			</div>
 		</div>
 	);

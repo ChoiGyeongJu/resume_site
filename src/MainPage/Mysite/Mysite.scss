@@ -1,0 +1,25 @@
+@font-face {
+    font-family: NanumSquareOTF;
+    src: url('../../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
+  }
+
+.mysite {
+    background: rgb(44, 1, 84);
+    width: 100%;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+
+    .title {
+        width: 150px;
+        height: 50px;
+        padding-top: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-family: NanumSquareOTF;
+        font-size: 32px;
+        font-weight: 800;
+        border-bottom: 3px solid white;
+    }
+}
