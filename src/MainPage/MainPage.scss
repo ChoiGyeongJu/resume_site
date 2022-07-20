@@ -8,6 +8,10 @@
 	src: url('../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
 }
 
+body {
+	overflow-x: hidden;
+}
+
 .container {
 	width: 100%;
 

@@ -12,13 +12,13 @@
 	.Nav {
 		background-color: white;
 		width: 100%;
-		margin-top: -8px;
-		height: 80px;
+		margin-top: -0.7rem;;
+		height: 4.9rem;
 		border: 1px solid rgba(0,0,0,.1);
 		display: flex;
 		position: fixed;
 		z-index: 99999;
-		margin-left: -8px;
+		padding-right: 5rem;
 
         .menu-list {
             display: none;
@@ -26,7 +26,7 @@
 
 		.Nav-left {
 			padding-top: 32px;
-			width: 30%;
+			width: 70%;
 			display: flex;
 			justify-content: center;
 
@@ -70,16 +70,15 @@
 	.Nav {
 		background-color: white;
 		width: 100%;
+		margin-top: -0.7rem;;
 		height: 4.9rem;
 		border: 1px solid rgba(0,0,0,.1);
 		display: flex;
 		position: fixed;
 		z-index: 99999;
-		margin-left: -8px;
-		margin-top: -8px;
+		padding-right: 5rem;
 
 		.menu-list {
-            margin-left: -1px;
 			position: absolute;
 			width: 100%;
 			margin-top: 3.56rem;
@@ -87,7 +86,7 @@
 			background-color: white;
 			display: table;
 			border-bottom: 1px solid rgba(0,0,0,.1);
-            padding-left: 2rem;
+            padding-left: 6rem;
 
 			.menu-title {
 				font-size: 1rem;
@@ -102,9 +101,9 @@
 
 		.Nav-left {
             padding-top: 1.7rem;
-			width: 60%;
+			width: 80%;
 			display: flex;
-			justify-content: center;
+			padding-left: 6.5rem;
 
 			.Nav-title {
 				font-size: 1rem;
@@ -116,14 +115,15 @@
 		}
 
 		.Nav-center {
-			width: 10%;
+			// width: 10%;
 		}
 
 		.Nav-right {
-            padding-top: 1.7rem;
+            padding-top: 2rem;
 			width: 30%;
 			display: flex;
 			justify-content: center;
+			// margin-right: 1.8rem;
 
 			.Nav-menu {
 				display: none;

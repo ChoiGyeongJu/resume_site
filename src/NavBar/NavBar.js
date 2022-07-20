@@ -17,7 +17,7 @@ const NavBar = () => {
 	const ScrollAbout = () => {
 		setIstoggle(false);
 		window.scrollTo({
-			top: 820,
+			top: 960,
 			behavior: 'smooth',
 		});
 	};
@@ -25,7 +25,7 @@ const NavBar = () => {
 	const ScrollSkills = () => {
 		setIstoggle(false);
 		window.scrollTo({
-			top: 1460,
+			top: 1520,
 			behavior: 'smooth',
 		});
 	};
@@ -33,7 +33,7 @@ const NavBar = () => {
 	const ScrollMysite = () => {
 		setIstoggle(false);
 		window.scrollTo({
-			top: 2100,
+			top: 2170,
 			behavior: 'smooth',
 		});
 	};
