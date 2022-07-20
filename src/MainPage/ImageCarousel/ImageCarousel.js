@@ -51,7 +51,7 @@ const ImageCarousel = () => {
 		const { style, onClick } = props;
 		return (
 			<div onClick={onClick}>
-				<img className="nextButton" src={prevImage} style={{ transform: 'rotate(180deg)' }} />
+				<img className="nextButton" src={prevImage} />
 			</div>
 		);
 	}
@@ -60,7 +60,7 @@ const ImageCarousel = () => {
 		const { style, onClick } = props;
 		return (
 			<div onClick={onClick}>
-				<img className="prevButton" src={prevImage} />
+				<img className="prevButton" src={prevImage} style={{ transform: 'rotate(180deg)' }} />
 			</div>
 		);
 	}

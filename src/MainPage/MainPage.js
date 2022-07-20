@@ -11,6 +11,18 @@ import Skills from './Skills/Skills';
 import Mysite from './Mysite/Mysite';
 
 const MainPage = () => {
+	const [line2, setline2] = useState(false);
+	const [line3, setline3] = useState(false);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setline2(true);
+		}, 1500);
+		setTimeout(() => {
+			setline3(true);
+		}, 3000);
+	}, []);
+
 	return (
 		<div className="container">
 			<div className="intro1">
@@ -18,15 +30,19 @@ const MainPage = () => {
 					<ImageCarousel />
 				</div>
 				<div className="profile-right">
-					<Fade left>
+					<Fade top>
 						<div className="profile-content">안녕하세요.</div>
 					</Fade>
-					<Fade right>
-						<div className="profile-content">N년차 프론트엔드 개발자</div>
-					</Fade>
-					<Fade left>
-						<div className="profile-content">XXX입니다.</div>
-					</Fade>
+					{line2 ? (
+						<Fade top>
+							<div className="profile-content">N년차 프론트엔드 개발자</div>
+						</Fade>
+					) : null}
+					{line3 ? (
+						<Fade top>
+							<div className="profile-content">XXX입니다.</div>
+						</Fade>
+					) : null}
 				</div>
 			</div>
 			<About />

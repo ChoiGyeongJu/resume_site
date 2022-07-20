@@ -1,58 +1,139 @@
 @font-face {
-    font-family: SFProDisplay;
-    src: url('../styles/fonts/SFPRODISPLAYREGULAR.ttf') format('truetype');
-  }
+	font-family: SFProDisplay;
+	src: url('../styles/fonts/SFPRODISPLAYREGULAR.ttf') format('truetype');
+}
 
 @font-face {
-    font-family: NanumSquareOTF;
-    src: url('../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
-  }
-  
-  
-.Nav {
-    background-color: rgb(44, 1, 84);
-    width: 100%;
-    margin-top: -8px;
-    height: 80px;
-    // border-bottom: 2px solid black;
-    display: flex;
-    position: fixed;
-    z-index: 99999;
-    margin-left: -8px;
+	font-family: NanumSquareOTF;
+	src: url('../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
+}
 
-    .Nav-left {
-        padding-top: 32px;
-        width: 30%;
-        display: flex;
-        justify-content: center;
+@media only screen and (min-width: 877.8px) {
+	.Nav {
+		background-color: white;
+		width: 100%;
+		margin-top: -8px;
+		height: 80px;
+		border: 1px solid rgba(0,0,0,.1);
+		display: flex;
+		position: fixed;
+		z-index: 99999;
+		margin-left: -8px;
 
-        .Nav-title {
-            font-size: 16px;
-            display: flex;
-            font-weight: 800;
-            font-family: NanumSquareOTF;
-            color: white;
+        .menu-list {
+            display: none;
         }
-    }
 
-    .Nav-center {
-        width: 20%;
-    }
+		.Nav-left {
+			padding-top: 32px;
+			width: 30%;
+			display: flex;
+			justify-content: center;
 
-    .Nav-right {
-        padding-top: 32px;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-    
-        .Nav-menu {
-            font-size: 16px;
-            display: flex;
-            font-weight: 600;
-            padding-right: 42px;
-            cursor: pointer;
-            font-family: SFProDisplay;
-            color: white;
-        }
-    }
+			.Nav-title {
+				// font-size: 16px;
+				font-size: 1rem;
+				display: flex;
+				font-weight: 800;
+				font-family: NanumSquareOTF;
+			}
+		}
+
+		.Nav-center {
+			width: 20%;
+		}
+
+		.Nav-right {
+			padding-top: 32px;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+
+			.Nav-menu {
+				// font-size: 16px;
+				font-size: 1rem;
+				display: flex;
+				font-weight: 600;
+				padding-right: 42px;
+				cursor: pointer;
+				font-family: SFProDisplay;
+			}
+
+			.hamburger {
+				display: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 878px) {
+	.Nav {
+		background-color: white;
+		width: 100%;
+		height: 4.9rem;
+		border: 1px solid rgba(0,0,0,.1);
+		display: flex;
+		position: fixed;
+		z-index: 99999;
+		margin-left: -8px;
+		margin-top: -8px;
+
+		.menu-list {
+            margin-left: -1px;
+			position: absolute;
+			width: 100%;
+			margin-top: 3.56rem;
+			height: auto;
+			background-color: white;
+			display: table;
+			border-bottom: 1px solid rgba(0,0,0,.1);
+            padding-left: 2rem;
+
+			.menu-title {
+				font-size: 1rem;
+				display: table;
+				padding: 0.75rem 0;
+				font-weight: 700;
+				cursor: pointer;
+				color: #6c757d;
+				line-height: 1.25rem;
+			}
+		}
+
+		.Nav-left {
+            padding-top: 1.7rem;
+			width: 60%;
+			display: flex;
+			justify-content: center;
+
+			.Nav-title {
+				font-size: 1rem;
+				display: flex;
+				font-weight: 800;
+				font-family: NanumSquareOTF;
+				color: black;
+			}
+		}
+
+		.Nav-center {
+			width: 10%;
+		}
+
+		.Nav-right {
+            padding-top: 1.7rem;
+			width: 30%;
+			display: flex;
+			justify-content: center;
+
+			.Nav-menu {
+				display: none;
+			}
+
+			.hamburger {
+				width: 1rem;
+				height: 1rem;
+				cursor: pointer;
+			}
+		}
+	}
 }
