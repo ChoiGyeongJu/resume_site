@@ -114,13 +114,24 @@ const NavBar = () => {
 					My Site
 				</div>
 
-				<img
+				<div
+					onClick={() => {
+						handleToggle();
+					}}
+					className="hamburger-wrap"
+				>
+					<div className="hamburger" />
+					<div className="hamburger" />
+					<div className="hamburger" />
+				</div>
+
+				{/* <img
 					onClick={() => {
 						handleToggle();
 					}}
 					className="hamburger"
 					src={hamburger}
-				/>
+				/> */}
 			</div>
 			{Istoggle ? (
 				<div className="menu-list">
