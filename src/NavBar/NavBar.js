@@ -1,11 +1,33 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import './NavBar.scss';
 import hamburger from '../images/icons/hamburger.svg';
 
 const NavBar = () => {
+	function useWindowSize() {
+		const [windowSize, setWindowSize] = useState({
+			width: undefined,
+			height: undefined,
+		});
+
+		useEffect(() => {
+			function handleResize() {
+				setWindowSize({
+					width: window.innerWidth,
+					height: window.innerHeight,
+				});
+			}
+			window.addEventListener('resize', handleResize);
+			handleResize();
+			return () => window.removeEventListener('resize', handleResize);
+		}, []);
+
+		return windowSize;
+	}
+
+	const size = useWindowSize();
+
 	const ScrollTop = () => {
 		setIstoggle(false);
 		window.scrollTo({
@@ -16,33 +38,60 @@ const NavBar = () => {
 
 	const ScrollAbout = () => {
 		setIstoggle(false);
+		let position = 0;
+		if (size.width > 1228) {
+			position = 780;
+		} else {
+			position = 640;
+		}
+
 		window.scrollTo({
-			top: 960,
+			top: position,
 			behavior: 'smooth',
 		});
 	};
 
 	const ScrollSkills = () => {
 		setIstoggle(false);
+		let position = 0;
+		if (size.width < 513) {
+			position = 1650;
+		} else if (size.width < 878) {
+			position = 1310;
+		} else if (size.width > 877 && size.width < 1228) {
+			position = 1200;
+		} else if (size.width > 1228) {
+			position = 1340;
+		}
+
 		window.scrollTo({
-			top: 1520,
+			top: position,
 			behavior: 'smooth',
 		});
 	};
 
 	const ScrollMysite = () => {
 		setIstoggle(false);
+		let position = 0;
+		if (size.width < 513) {
+			position = 2990;
+		} else if (size.width < 878) {
+			position = 2660;
+		} else if (size.width > 877 && size.width < 1228) {
+			position = 1840;
+		} else if (size.width > 1228) {
+			position = 1960;
+		}
+
 		window.scrollTo({
-			top: 2170,
+			top: position,
 			behavior: 'smooth',
 		});
 	};
 
 	const [Istoggle, setIstoggle] = useState(false);
-
 	const handleToggle = () => {
 		setIstoggle(!Istoggle);
-		console.log(Istoggle);
 	};
 
 	return (

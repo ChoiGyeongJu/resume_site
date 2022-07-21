@@ -26,23 +26,23 @@ const MainPage = () => {
 	return (
 		<div className="container">
 			<div className="intro1">
-				<div className="profile-left">
+				<div className="intro-table">
 					<ImageCarousel />
-				</div>
-				<div className="profile-right">
-					<Fade top>
-						<div className="profile-content">안녕하세요.</div>
-					</Fade>
-					{line2 ? (
+					<div className="right-table">
 						<Fade top>
-							<div className="profile-content">N년차 프론트엔드 개발자</div>
+							<div className="profile-content">안녕하세요.</div>
 						</Fade>
-					) : null}
-					{line3 ? (
-						<Fade top>
-							<div className="profile-content">XXX입니다.</div>
-						</Fade>
-					) : null}
+						{line2 ? (
+							<Fade top>
+								<div className="profile-content">N년차 프론트엔드 개발자</div>
+							</Fade>
+						) : null}
+						{line3 ? (
+							<Fade top>
+								<div className="profile-content">XXX입니다.</div>
+							</Fade>
+						) : null}
+					</div>
 				</div>
 			</div>
 			<About />

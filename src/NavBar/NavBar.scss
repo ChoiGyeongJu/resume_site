@@ -10,15 +10,15 @@
 
 @media only screen and (min-width: 877.8px) {
 	.Nav {
-		background-color: white;
+		background-color: #02343F;
 		width: 100%;
 		margin-top: -0.7rem;;
+		margin-left: -0.6rem;
 		height: 4.9rem;
 		border: 1px solid rgba(0,0,0,.1);
 		display: flex;
 		position: fixed;
 		z-index: 99999;
-		padding-right: 5rem;
 
         .menu-list {
             display: none;
@@ -36,16 +36,17 @@
 				display: flex;
 				font-weight: 800;
 				font-family: NanumSquareOTF;
+				color: #F0EDCC;
 			}
 		}
 
 		.Nav-center {
-			width: 20%;
+			width: 15%;
 		}
 
 		.Nav-right {
 			padding-top: 32px;
-			width: 50%;
+			width: 55%;
 			display: flex;
 			justify-content: center;
 
@@ -57,6 +58,7 @@
 				padding-right: 42px;
 				cursor: pointer;
 				font-family: SFProDisplay;
+				color: #F0EDCC;
 			}
 
 			.hamburger {
@@ -70,13 +72,14 @@
 	.Nav {
 		background-color: white;
 		width: 100%;
-		margin-top: -0.7rem;;
+		margin-top: -0.7rem;
+		margin-left: -0.6rem;
+		padding-right: 5rem;
 		height: 4.9rem;
 		border: 1px solid rgba(0,0,0,.1);
 		display: flex;
 		position: fixed;
 		z-index: 99999;
-		padding-right: 5rem;
 
 		.menu-list {
 			position: absolute;
@@ -103,7 +106,7 @@
             padding-top: 1.7rem;
 			width: 80%;
 			display: flex;
-			padding-left: 6.5rem;
+			padding-left: 2rem;
 
 			.Nav-title {
 				font-size: 1rem;

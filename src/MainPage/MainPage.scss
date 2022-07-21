@@ -8,6 +8,12 @@
 	src: url('../styles/fonts/NanumSquareOTFR.ttf') format('truetype');
 }
 
+@media screen and (max-width: 1920px) {
+	header {
+		overflow-x: hidden;
+	}
+}
+
 body {
 	overflow-x: hidden;
 }
@@ -16,36 +22,59 @@ body {
 	width: 100%;
 
 	.intro1 {
-		width: 100%;
-		height: 840px;
-		display: flex;
+		width: auto;
+		height: auto;
 		position: relative;
 		top: 70px;
 		padding-top: 120px;
-		background-image: url('../images/icons/desktop.jpg');
+		background-color: #F0EDCC;
+		// background-image: url('../images/icons/desktop.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		margin-bottom: 130px;
-		margin-left: -42px;
-		padding-left: 50px;
+		display: grid;
+		justify-content: center;
 
-		.profile-left {
-			width: 50%;
-			display: flex;
-			justify-content: center;
-			padding-top: 60px;
+		@media only screen and (min-width: 1024.1px) {
+			.intro-table {
+				margin-top: 5rem;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				width: 100%;
+				padding-bottom: 9rem;
+
+				.right-table {
+					margin-left: 6rem;
+
+					.profile-content {
+						font-family: NanumSquareOTF;
+						font-weight: 800;
+						font-size: 2.2rem;
+						margin-top: 4rem;
+						color: #02343F;
+					}
+				}
+			}
 		}
 
-		.profile-right {
-			width: 50%;
-			margin-top: 120px;
+		@media only screen and (max-width: 1024px) {
+			.intro-table {
+				display: grid;
+				grid-template-columns: 1fr;
+				width: 100%;
+				padding-bottom: 6rem;
 
-			.profile-content {
-				font-size: 1.7rem;
-				margin-left: 2rem;
-				margin-top: 42px;
-				font-family: NanumSquareOTF;
-				font-weight: 600;
+				.right-table {
+					margin-left: 40%;
+
+					.profile-content {
+						font-family: NanumSquareOTF;
+						font-weight: 800;
+						font-size: 1rem;
+						margin-top: 2rem;
+						color: #02343F;
+					}
+				}
 			}
 		}
 	}
