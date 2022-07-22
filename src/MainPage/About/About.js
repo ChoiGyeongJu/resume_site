@@ -24,7 +24,7 @@ const About = () => {
 						<div className="each-table">
 							<img className="icon" src={user} />
 							<div className="description">이름</div>
-							<div className="answer">강동원</div>
+							<div className="answer">최경주</div>
 						</div>
 						<div className="each-table">
 							<img className="icon" src={calendar} />
